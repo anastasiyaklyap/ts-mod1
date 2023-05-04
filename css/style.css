@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css?family=Oswald:400,600|Sacramento|Source+Sans+Pro:300&subset=latin-ext");
+/* Variables */
+/* Global */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  background: #fff;
+  font-family: "Source Sans Pro", sans-serif;
+  color: #444;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.section-title {
+  font-size: 22px;
+  text-transform: uppercase;
+  font-family: "Oswald", sans-serif;
+  font-weight: 600;
+}
+.section-title span {
+  text-transform: none;
+  font-weight: 400;
+  color: #777777;
+}
+
+/* Layout */
+.wrapper {
+  display: flex;
+  margin-left: 10px;
+}
+
+.sidebar {
+  flex: 1 0 0;
+}
+
+.posts {
+  flex: 2 0 0;
+}
+
+.sidebar,
+.posts {
+  background: #fff;
+  margin-right: 10px;
+  padding: 40px;
+  border: 1px solid #444;
+  border-radius: 5px;
+}
+
+/* Logo */
+.logo {
+  font-family: "Sacramento", cursive;
+  font-weight: 400;
+  font-size: 104px;
+  line-height: 1;
+  text-align: center;
+}
+
+/* Lists */
+.list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.list .active {
+  font-weight: bold;
+}
+
+.list-horizontal li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+/* Authors */
+.authors li {
+  margin-bottom: 12px;
+}
+
+/* Post */
+.post {
+  display: none;
+}
+.post.active {
+  display: block;
+}
+
+.post-author {
+  font-style: italic;
+}
+
+.post-tags {
+  display: flex;
+}
+.post-tags p {
+  margin: 0 10px 0 0;
+}
+
+/* Tags */
+.tags {
+  justify-content: space-around;
+}
+.tags a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.tag-size-5 {
+  font-family: "Sacramento", cursive;
+  font-size: 42px;
+  color: #a102ea;
+}
+
+.tag-size-4 {
+  font-family: "Sacramento", cursive;
+  font-size: 26px;
+  color: #ea02c0;
+}
+
+.tag-size-3 {
+  font-family: "Sacramento", cursive;
+  font-size: 24px;
+  color: #2c02ea;
+}
+
+.tag-size-2 {
+  font-family: "Sacramento", cursive;
+  font-size: 18px;
+  color: #02cfea;
+}
+
+.tag-size-1 {
+  font-family: "Sacramento", cursive;
+  font-size: 14px;
+  color: #02ea91;
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL3Nhc3Mvc3R5bGUuc2NzcyIsInN0eWxlLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBUSxxSEFBQTtBQUVSLGNBQUE7QUFZQSxXQUFBO0FBRUE7OztFQUdFLHNCQUFBO0FDWkY7O0FEZUE7RUFDRSxnQkFuQlk7RUFvQlosMENBYlU7RUFjVixXQXBCVztFQXFCWCxnQkFBQTtFQUNBLGVBQUE7RUFDQSxnQkFBQTtBQ1pGOztBRGVBO0VBQ0UsaUJBQUE7RUFDQSxjQUFBO0FDWkY7O0FEZUE7RUFDRSxlQUFBO0VBQ0EseUJBQUE7RUFDQSxpQ0E5Qlk7RUErQlosZ0JBQUE7QUNaRjtBRGNFO0VBQ0Usb0JBQUE7RUFDQSxnQkFBQTtFQUNBLGNBQUE7QUNaSjs7QURnQkEsV0FBQTtBQUVBO0VBQ0UsYUFBQTtFQUNBLGlCQUFBO0FDZEY7O0FEaUJBO0VBQ0UsV0FBQTtBQ2RGOztBRGlCQTtFQUNFLFdBQUE7QUNkRjs7QURpQkE7O0VBRUUsZ0JBOURZO0VBK0RaLGtCQUFBO0VBQ0EsYUFBQTtFQUNBLHNCQUFBO0VBQ0Esa0JBQUE7QUNkRjs7QURpQkEsU0FBQTtBQUVBO0VBQ0Usa0NBckVVO0VBc0VWLGdCQUFBO0VBQ0EsZ0JBQUE7RUFDQSxjQUFBO0VBQ0Esa0JBQUE7QUNmRjs7QURrQkEsVUFBQTtBQUVBO0VBQ0UscUJBQUE7RUFDQSxTQUFBO0VBQ0EsVUFBQTtBQ2hCRjtBRGtCRTtFQUNFLGlCQUFBO0FDaEJKOztBRHFCRTtFQUNFLHFCQUFBO0VBQ0Esa0JBQUE7QUNsQko7O0FEc0JBLFlBQUE7QUFHRTtFQUNFLG1CQUFBO0FDckJKOztBRHlCQSxTQUFBO0FBRUE7RUFDRSxhQUFBO0FDdkJGO0FEeUJFO0VBQ0UsY0FBQTtBQ3ZCSjs7QUQyQkE7RUFDRSxrQkFBQTtBQ3hCRjs7QUQyQkE7RUFDRSxhQUFBO0FDeEJGO0FEMEJFO0VBQ0Usa0JBQUE7QUN4Qko7O0FENEJBLFNBQUE7QUFFQTtFQUNFLDZCQUFBO0FDMUJGO0FENEJFO0VBRUUscUJBQUE7RUFDQSx5QkFBQTtFQUNBLGlCQUFBO0VBQ0Esa0JBQUE7QUMzQko7O0FEK0JBO0VBQ0Usa0NBNUlVO0VBNklWLGVBQUE7RUFDQSxjQUFBO0FDNUJGOztBRCtCQTtFQUNFLGtDQWxKVTtFQW1KVixlQUFBO0VBQ0EsY0FBQTtBQzVCRjs7QUQrQkE7RUFDRSxrQ0F4SlU7RUF5SlYsZUFBQTtFQUNBLGNBQUE7QUM1QkY7O0FEK0JBO0VBQ0Usa0NBOUpVO0VBK0pWLGVBQUE7RUFDQSxjQUFBO0FDNUJGOztBRCtCQTtFQUNFLGtDQXBLVTtFQXFLVixlQUFBO0VBQ0EsY0FBQTtBQzVCRiIsImZpbGUiOiJzdHlsZS5jc3MifQ== */
